@@ -1,8 +1,16 @@
 body {
 	background-color: grey;
+	
+	 font-family: 'IBM Plex Mono', monospace;
+
 }
 
-
+button {
+	
+}
+#c {
+	border: 2px solid black;
+}
 
 h1 {
 	text-align: center;
@@ -10,19 +18,22 @@ h1 {
 .racetrack {
 	width: 300px 0;
 	border: 5px solid black;
-	padding: 25px 50px;
-	margin: 25px 25px 25px;
+	padding: 15px 5px;
+	margin: 25px 25px 25px;\
+	height: ;
 
+}
 
+p {
+	text-align: left;
+	text-transform: bold;
+	
 
 
 }
 
-.player {
-	width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-left: 50px solid #555;
-	border-bottom: 25px solid transparent;
+div {
+	padding: 10px;
+	margin: 0 auto;
+	border: 50px;
 }
-
