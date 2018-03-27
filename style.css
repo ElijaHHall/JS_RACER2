@@ -1,12 +1,8 @@
 body {
-	background-color: grey;
+	background-color: white;
 	
 	 font-family: 'IBM Plex Mono', monospace;
 
-}
-
-button {
-	
 }
 
 h1 {
@@ -18,7 +14,6 @@ h1 {
 	padding: 15px 5px;
 	margin: 25px 25px 25px;\
 	height: ;
-
 }
 
 p {
@@ -28,9 +23,8 @@ p {
 
 
 }
+img {
+	height: 50px;
+	width: 50px;
 
-div {
-	padding: 10px;
-	margin: 0 auto;
-	border: 50px;
 }

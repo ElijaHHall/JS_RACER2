@@ -1,47 +1,31 @@
-$(document).ready(function() {
-	var end_of_track = 15;
-	var players = [
 
-	{
-		id: 1,
-		position: 0,
-		keycode: 39,
-		css_locator: "#player"
-	},
-	{
-		id: 2,
-		position: 0,
-		keycode: 81,
-		css_locator: "#player"
 
-		}
 
-	];
-}
 
-function rightArrowPressed() {
-	debugger;
-	players.forEach(function(player) {
-		if (keyCode == player.keycode && players[0].position < end_of_track && players[1].position <end_of_track) {
-			move_player(player.css_locator);
-			player.position++;
-			winner(playe.position, player.id);
-		}
-	});
+let racer1=document.getElementById("racer1");
+let racer2=document.getElementById("racer2");
+
+let racerOne = 0;
+let racerTwo = 0;
+
+let road=document.getElementById('road');
+
+function race(e){
+    if(e.keyCode == 39){
+        racerOne += 25;
+        racer1.style.marginLeft = racerOne + ('px');
+        if (racerOne >= 800){
+            alert("racer one wins");
+        }
+    }
+    if(e.keyCode == 80){
+        racerTwo += 25;
+        racer2.style.marginLeft = racerTwo + ('px');
+        if(racerTwo >= 800){
+            alert("racer two wins");
+        }
+    }
 }
 
 
-
-
-function moveSelection(evt) {
-	switch (evt.keyCode) {
-		case 39:
-		rightArrowPressed();
-		break;
-	}
-};
-
-function docReady()
-{
-	window.addEventListener("keydown", moveSelection);
-}
+document.onkeydown = race;
