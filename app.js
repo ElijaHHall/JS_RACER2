@@ -2,30 +2,34 @@
 
 
 
-let racer1=document.getElementById("racer1");
-let racer2=document.getElementById("racer2");
+const sonic = document.getElementById("sonic");
+const shadow = document.getElementById("shadow");
+let margValue = 0;
 
-let racerOne = 0;
-let racerTwo = 0;
+document.addEventListener("keydown", (event) => {
+    // console.log(e.keyCode)
+    console.log("Button is pushed");
+});
 
-let road=document.getElementById('road');
+let racetrack = document.getElementById('racetrack');
 
-function race(e){
+function race(e) {
+    
     if(e.keyCode == 39){
-        racerOne += 25;
-        racer1.style.marginLeft = racerOne + ('px');
-        if (racerOne >= 800){
-            alert("racer one wins");
+        margValue += 60;
+        sonic.style.marginLeft = margValue + ('px');
+        if (margValue >= 800){
+            alert("Sonic wins!");
         }
     }
     if(e.keyCode == 80){
-        racerTwo += 25;
-        racer2.style.marginLeft = racerTwo + ('px');
-        if(racerTwo >= 800){
-            alert("racer two wins");
+        margValue += 60;
+        shadow.style.marginLeft = margValue + ('px');
+        if(margValue >= 800){
+            alert("Shadow wins!");
         }
     }
-}
+};
 
 
 document.onkeydown = race;
