@@ -1,7 +1,7 @@
 
-const sonic = document.getElementById("sonic");
-const shadow = document.getElementById("shadow");
-let margValue = 0;
+var sonic = document.getElementById("sonic");
+var shadow = document.getElementById("shadow");
+var margValue = 0;
 
 document.addEventListener("keydown", (event) => {
     // console.log(e.keyCode)
